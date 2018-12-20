@@ -2,7 +2,7 @@ installdir = $(pkgdatadir)/rc_models
 
 dist_install_DATA = \
 	rc_models.cfg \
-	dmmadv.png amiko.png amiko1.png edision1.png et4x00.png et8000.png et9x00.png vu.png xp1000.png \
+	dmmadv.png amiko.png amiko1.png azboxminime.png edision1.png et4x00.png et8000.png et9x00.png vu.png xp1000.png \
 	dmm.png et6x00.png et9500.png vuduo2.png vuultimo.png vu2.png et7x00.png formuler1.png \
 	hd2400.png hd-gen.png vs1x00.png wetekplay.png osmini.png zgemma.png miraclebox.png miraclebox2.png \
 	spycat.png xpeedlx.png revo4k.png sab.png sh1.png i55.png qviart.png gb7252.png e4hd.png \
