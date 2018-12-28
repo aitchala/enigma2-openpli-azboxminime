@@ -155,11 +155,16 @@
 
 <!-- standby -->
 	<screen name="StandbySummary" position="fill">
-		<widget source="global.CurrentTime" render="Label" position="center,0" size="120,64" font="FdLcD;48" halign="center" valign="center" noWrap="1">
-			<convert type="ClockToText"></convert>
+		<widget font="FdLcD;26" halign="center" position="6,4" render="Label" size="120,24" source="global.CurrentTime" valign="center">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<widget source="session.RecordState" render="FixedLabel" text="Recording" position="4,50" size="120,12" font="FdLcD;12" zPosition="2" valign="bottom" halign="left" noWrap="1">
-			<convert type="ConditionalShowHide"></convert>
+		<eLabel backgroundColor="white" position="0,28" size="132,1"/>
+		<widget font="FdLcD;30" halign="center" position="6,32" render="Label" size="120,32" source="global.CurrentTime" valign="center">
+		<convert type="ClockToText">Format:%H:%M</convert>
+	</widget>
+		<widget position="6,0" render="FixedLabel" size="120,64" source="session.RecordState" text=" " zPosition="1">
+			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
 <!-- Plugin browser -->
